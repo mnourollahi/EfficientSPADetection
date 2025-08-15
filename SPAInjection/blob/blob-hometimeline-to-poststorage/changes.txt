@@ -1,0 +1,20 @@
+changes in following files:
+
+main dockerfile:
+added:
+  && thrift --gen cpp social_network.thrift \
+  
+in social_network.thrift added:
+  list<Post> ReadHomeTimelinePosts(
+    1: i64 req_id,
+    2: i64 user_id,
+    3: i32 start_idx,
+    4: i32 stop_idx,
+    5: map<string, string> carrier
+  ) throws (1: ServiceException se)
+
+in PostSotrage:
+changed all .h, .cpp, cmakelist files
+
+in hometimeline:
+changed all .h, .cpp, cmakelist files

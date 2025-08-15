@@ -1,0 +1,2 @@
+This folder contains files related to different scenarios of SPA injection in DeathStarBench application.
+To reduce the file sizes we have just included the files that has change. To have different versions of DeathStarBench social network with the injected SPAs you need to replace the changed files with the original files in DeathStarBench.
